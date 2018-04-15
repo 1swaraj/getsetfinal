@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GETSET</string>
+    <string name="facebook_app_id">114378019389505</string>
+    <string name="fb_login_protocol_scheme">fb114378019389505</string>
+
+    <string name="title_activity_eqtest">EQTest</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="share">Share</string>
+    <string name="title_activity_iqtest">IQTest</string>
+</resources>

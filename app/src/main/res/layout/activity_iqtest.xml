@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94bc63"
+    tools:context="com.getset.career.guidance.IQTest">
+
+    <WebView
+        android:id="@+id/game1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fadeScrollbars="true"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</RelativeLayout>

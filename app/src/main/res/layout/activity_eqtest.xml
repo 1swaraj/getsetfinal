@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94bc63"
+    tools:context=".EQTest">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/q1"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <custom_font.MyTextView
+            android:id="@+id/myEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:inputType="text"
+            android:letterSpacing="0.1"
+            android:text="The face expresses?"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+         />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/myEditText"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/option1"
+                style="@android:style/Widget.Holo.Light.Button"
+                android:layout_width="300dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:textSize="12sp"
+                android:text="Button"
+                android:textColor="#fc9247" />
+
+            <Button
+                android:id="@+id/option2"
+                android:textSize="12sp"
+                style="@android:style/Widget.Holo.Light.Button"
+                android:layout_width="300dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+
+                android:text="Button"
+                android:textColor="#fc9247" />
+
+            <Button
+                android:id="@+id/option3"
+                style="@android:style/Widget.Holo.Light.Button"
+                android:layout_width="300dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:textSize="12sp"
+                android:text="Button"
+                android:textColor="#fc9247" />
+
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/option4"
+                style="@android:style/Widget.Holo.Light.Button"
+                android:layout_width="300dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+
+                android:text="Button"
+                android:textColor="#fc9247" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
